@@ -34,5 +34,4 @@ function totalRevenue(array) {
   return array.reduce(function cb(agg, el, i, arr){
     return agg + el.revenue;
   }, 0)
-  
 }
