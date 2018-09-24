@@ -13,7 +13,7 @@ function logDriversByHometown(array, location) {
   })
 }
 
-function driversByRevenue(array) {
+const sorted = function driversByRevenue(array) {
   return array.sort(function cb (a, b) {
     if (a.revenue < b.revenue)
       return -1;
