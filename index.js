@@ -13,8 +13,10 @@ function logDriversByHometown(array, location) {
   })
 }
 
+function compareNumbers(a, b) {
+  return a - b;
+}
+
 function driversByRevenue(array) {
-  return array.sort(function cb (a, b) {
-    a.revenue - b.revenue;
-  })
+  return array.sort(compareNumbers(a.revenue, b.revenue))
 }
