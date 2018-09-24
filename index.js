@@ -23,3 +23,14 @@ function driversByRevenue(array) {
       return 0;
   })
 }
+
+function driversByName(array) {
+  return array.slice().sort(function cb (a, b) {
+    if (a.revenue < b.revenue)
+      return -1;
+    if (a.revenue > b.revenue)
+      return 1;
+    else
+      return 0;
+  })
+}
