@@ -18,5 +18,5 @@ function compareNumbers(a, b) {
 }
 
 function driversByRevenue(array) {
-  return array.sort(compareNumbers(a.revenue, b.revenue))
+  return array.sort(compareNumbers(array[0].revenue, array[1].revenue))
 }
