@@ -38,6 +38,6 @@ function totalRevenue(array) {
 
 function averageRevenue(array) {
   return array.reduce(function cb(agg, el, i, arr){
-    return (agg + el.revenue)/(array.length);
-  }, 0)
+    return (agg + el.revenue)
+  }, 0)/(array.length);
 }
